@@ -20,9 +20,16 @@ Este projeto foi desenvolvido como parte de uma avaliação final de semestre de
 
 ## Tecnologias Utilizadas
 
+### FrontEnd
+
 - Vue.js
 - CSS
 - JavaScript/TypeScript
+
+### BackEnd/DataBase
+
+- Golang
+- MySQL
 
 ## Licença
 
