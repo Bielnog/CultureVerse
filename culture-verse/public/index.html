@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title>Culture Verse </title>
   </head>
   <body>
     <noscript>
@@ -15,3 +15,34 @@
     <!-- built files will be auto injected -->
   </body>
 </html>
+
+<style>
+  html {
+  scroll-behavior: smooth; /* Suaviza a rolagem */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+::-webkit-scrollbar {
+  width: 8px; /* Largura da barra de rolagem */
+}
+
+/* Trilho da barra de rolagem */
+::-webkit-scrollbar-track {
+  background: #94a4b3; /* Cor do trilho */
+  border-radius: 10px;
+}
+
+/* Polegar da barra de rolagem */
+::-webkit-scrollbar-thumb {
+  background: #4c5557; /* Cor do polegar da barra */
+  border-radius: 10px; /* Arredondamento dos cantos */
+}
+
+/* Polegar quando estiver sendo clicado */
+::-webkit-scrollbar-thumb:hover {
+  background: #3d3c3c; /* Cor do polegar ao passar o mouse */
+}
+</style>

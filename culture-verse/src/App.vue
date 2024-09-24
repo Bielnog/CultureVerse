@@ -1,15 +1,29 @@
 <template>
-  <Homeaa />
+  <v-app>
+    <SideBar>
+      <v-main>
+        <Home msg="Welcome to the homepage!" />
+      </v-main>
+    </SideBar>
+  </v-app>
 </template>
 
 <script lang="ts">
-import { Options, Vue } from "vue-class-component";
+import { defineComponent } from "vue";
 import Home from "./components/Home.vue";
+import SideBar from "./components/SideBar.vue";
 
-@Options({
+export default defineComponent({
+  name: "App",
   components: {
     Home,
+    SideBar,
   },
-})
-export default class App extends Vue {}
+});
 </script>
+
+<style>
+.v-main {
+  padding: 16px;
+}
+</style>

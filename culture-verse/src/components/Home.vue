@@ -1,9 +1,16 @@
 <template>
-  <div class="hello">hello</div>
+  <div class="hello">
+    <h1>{{ msg }}</h1>
+  </div>
 </template>
 
 <script lang="ts">
-import { Vue } from "vue-class-component";
+import { defineComponent } from "vue";
 
-export default class Homeaa extends Vue {}
+export default defineComponent({
+  name: "Home",
+  props: {
+    msg: String,
+  },
+});
 </script>
